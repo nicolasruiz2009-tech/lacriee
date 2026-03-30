@@ -25,3 +25,6 @@ next-env.d.ts
 
 # PDFs de test
 *.pdf
+
+# Generated at build time
+public/pdf.worker.min.js
