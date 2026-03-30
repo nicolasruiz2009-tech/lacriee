@@ -106,7 +106,7 @@ export default function FishTable({ data, info }: FishTableProps) {
 
       {/* Tableaux par espèce */}
       {Array.from(grouped.entries()).map(([espece, lots]) => {
-        const coef      = 2.00;
+        const coef      = 2.50;
         const sommeKg   = lots.reduce((s, l) => s + parseKg(l.qteKg), 0);
         const sousTotal = lots.reduce((s, l) => s + l.valeur, 0);
         const prixMoyen = sommeKg > 0 ? sousTotal / sommeKg : 0;
